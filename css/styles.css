@@ -7,10 +7,17 @@ url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
     scroll-behavior: smooth;
 }
 
+:root {
+    --primary-color: #232323;
+    --accent-color: #00FF6C;
+    --light-color: #fdfdfd;
+}
+
 body {
     margin: 0;
     font-family: 'Raleway',sans-serif;
     text-align: center;
+    background-color: var(--light-color);
 }
 
 img {
@@ -146,25 +153,25 @@ p:last-of-type {
 }
 
 .button-accent {
-    color: #00FF6C;
-    border-color: #00FF6C;
+    color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .button-accent:hover,
 .button-accent:focus {
-    background-color: #00FF6C;
-    color: #232323
+    background-color: var(--accent-color);
+    color: var(--primary-color)
 }
 
 .button-dark {
-    color: #232323;
-    border-color: #232323;
+    color: var(--primary-color);
+    border-color: var(--primary-color);
 }
 
 .button-dark:hover,
 .button-dark:focus {
-    background-color: #232323;
-    color: #00FF6C;
+    background-color: var(--primary-color);
+    color: var(--accent-color);
 }
 
 
@@ -193,12 +200,12 @@ nav a {
     text-transform: uppercase;
     font-size: .8rem;
     padding: .5em;
-    color: #FFF;
+    color: var(--light-color);
 }
 
 nav a:hover,
 nav a:focus {
-    color: #DDD;
+    color: var(--light-color);
 }
 
 @media (min-width: 65rem) {
@@ -217,7 +224,7 @@ nav a:focus {
     background-size: cover;
     background-position: center;
     padding: 10em 0;
-    color: #FFF;
+    color: var(--light-color);
 }
 
 @media (min-width: 65rem) {
@@ -230,23 +237,23 @@ nav a:focus {
 
 
 .home-about-textbox {
-    background-color: #232323;
+    background-color: var(--primary-color);
     padding: 4em;
     width: 100vw;
     margin-left: -2.5%;
-    outline: 2px solid #00FF6C;
+    outline: 2px solid var(--accent-color);
     outline-offset: -2.5em;
-    color: #FFF;
+    color: var(--light-color);
     position: relative;
 }
 
 .home-about-textbox h1 {
-    color: #00FF6C;
+    color: var(--accent-color);
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     top: .8em;
-    background-color: #232323;
+    background-color: var(--primary-color);
     padding: 0 .145em;
     text-transform: uppercase;
 }
@@ -298,6 +305,7 @@ nav a:focus {
 
 .portfolio h1 {
     font-weight: 700;
+    color: var(--primary-color);
 }
 
 .portfolio-item {
@@ -316,7 +324,7 @@ nav a:focus {
     bottom: 0em;
     left: 0em;
     right: 0em;
-    color: #FFF;
+    color: var(--light-color);
     background-color: rgba(0, 0, 0, .5);
     padding-bottom: 2em;
 }
@@ -350,15 +358,19 @@ nav a:focus {
 
 
 .call-to-action {
-    background-color: #00FF6C;
+    background-color: var(--accent-color);
     padding: 6em 0;
+}
+
+.call-to-action h1 {
+    color: var(--primary-color);
 }
 
 
 
 footer {
-    background-color: #232323;
-    color: #FFF;
+    background-color: var(--primary-color);
+    color: var(--light-color);
     text-align: left;
     padding: 5em 0;
 }
