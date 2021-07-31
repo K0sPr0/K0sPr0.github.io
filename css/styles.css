@@ -1,5 +1,4 @@
-@import 
-url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
 
 
 
@@ -306,7 +305,7 @@ nav a {
 
 nav a:hover,
 nav a:focus {
-    color: var(--light-color);
+    color: #BBB;
 }
 
 @media (min-width: 65rem) {
@@ -349,7 +348,7 @@ nav a:focus {
 
 /*  
 ============================
-    Who We Are Box
+    Who We Are Section
 
     1. Box style
     
@@ -389,6 +388,17 @@ nav a:focus {
     background-color: var(--primary-color);
     padding: 0 .145em;
     text-transform: uppercase;
+}
+
+.home-about a {
+    color: var(--light-color);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.home-about a:hover,
+.home-about a:focus {
+    color: #BBB;
 }
 
 @media (min-width: 25rem) {
