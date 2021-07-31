@@ -1,6 +1,26 @@
 @import 
 url('https://fonts.googleapis.com/css?family=Raleway:300,400,700,900');
 
+
+
+/*  
+============================
+    Basic style setup
+
+    1. Style of everything
+
+    2. Root styles
+
+    3. Body styles
+
+    4. Image styles
+
+    5. Container styles
+
+    6. Clearfix
+============================ 
+*/
+
 * {
     box-sizing: border-box;
     transition: all ease-in-out 200ms;
@@ -41,6 +61,28 @@ footer::after {
 
 
 
+/*  
+============================
+    Column System
+
+    1. Style of all columns
+
+    2. Style of first item in all columns
+
+    3. Single column styles
+
+    4. Style of all columns on wider screens
+
+    5. Style of first item in all columns on wider screens
+
+    6. Style of last item in all columns on wider screens
+
+    7. Triple column style on wider screens
+
+    8. Single column style on wider screens
+============================ 
+*/
+
 [class^=col-] {
     padding: .5em;
     width: 100%;
@@ -61,6 +103,7 @@ footer::after {
         padding: .5em;
         width: 100%;
     }
+
     [class^=col-]:first-child {
         padding-left: 0;
         margin-top: 0;
@@ -80,6 +123,26 @@ footer::after {
 }
 
 
+
+/*  
+============================
+    Typography
+
+    1. All headers styles
+
+    2. All paragraphs styles
+
+    3. Last paragraph in parent styles
+
+    4. All titles styles
+
+    5. All thin titles styles
+
+    6. Title in the "call to action" section styles
+
+    7. All unstyled lists styles
+============================ 
+*/
 
 h1 {
     font-weight: 300;
@@ -132,6 +195,26 @@ p:last-of-type {
 
 
 
+/*  
+============================
+    Buttons
+    
+    1. All buttons styles
+
+    2. All buttons on wider screens styles
+
+    3. Small buttons styles
+
+    4. Accent buttons styles
+
+    5. Accent buttons hover effect 
+
+    6. Dark buttons styles
+
+    7. Dark buttons hover effect
+============================ 
+*/
+
 .button {
     display: inline-block;
     font-size: 1.15rem;
@@ -176,6 +259,24 @@ p:last-of-type {
 
 
 
+/*  
+============================
+    Header
+
+    1. Header style
+    
+    2. Header lists styles
+
+    3. Header list items styles
+
+    4. Header links styles
+
+    5. Header link hover effect 
+
+    6. Header style on wider screens
+============================ 
+*/
+
 header {
     position: absolute;
     left: 0;
@@ -219,6 +320,16 @@ nav a:focus {
 
 
 
+/*  
+============================
+    Home Section
+
+    1. Home section style
+    
+    2. Home section style on wider screens
+============================ 
+*/
+
 .home-hero {
     background-image: url(../img/hero-bg.jpg);
     background-size: cover;
@@ -235,6 +346,28 @@ nav a:focus {
 }
 
 
+
+/*  
+============================
+    Who We Are Box
+
+    1. Box style
+    
+    2. Box title style
+
+    3. Titles on medium screens style
+
+    4. Box title on medium screens style
+
+    5. Titles on wider screens style
+
+    6. Section on wider screens style
+
+    7. Box on wider screens style
+
+    8. Box title on wider screens style
+============================ 
+*/
 
 .home-about-textbox {
     background-color: var(--primary-color);
@@ -299,6 +432,32 @@ nav a:focus {
 
 
 
+/*  
+============================
+    Portfolio Section
+    
+    1. Section style
+
+    2. Title style
+
+    3. Item style
+
+    3. Image style
+
+    4. Description style
+
+    5. Paragraph style
+
+    6. Item on medium screens style
+
+    7. Item on wider screens style
+
+    8. Description on wider screens style
+
+    9. Hover animation on wider screens
+============================ 
+*/
+
 .portfolio {
     margin: 3em 0 0;
 }
@@ -357,6 +516,16 @@ nav a:focus {
 
 
 
+/*  
+============================
+    Call To Action Section
+
+    1. Section style
+
+    2. Title style
+============================ 
+*/
+
 .call-to-action {
     background-color: var(--accent-color);
     padding: 6em 0;
@@ -368,6 +537,14 @@ nav a:focus {
 
 
 
+/*  
+============================
+    Footer Section
+
+    1. Section style
+============================ 
+*/
+
 footer {
     background-color: var(--primary-color);
     color: var(--light-color);
@@ -377,6 +554,14 @@ footer {
 
 
 
-.about {
+/*  
+============================
+    About Page
+
+    1. Title style
+============================ 
+*/
+
+.about-title {
     font-size: 5rem; 
 }
