@@ -31,7 +31,7 @@
 }
 
 body {
-	margin: 0;
+	margin: 0 auto;
 	font-family: "Raleway", sans-serif;
 	text-align: center;
 	background-color: var(--light-color);
@@ -330,6 +330,7 @@ nav a:focus {
 @media (min-width: 65rem) {
 	.home-hero {
 		height: 100vh;
+		min-height: 50rem;
 		padding-top: 35vh;
 	}
 }
