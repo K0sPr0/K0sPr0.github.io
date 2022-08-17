@@ -225,7 +225,7 @@ input[type=checkbox]{
    /*HAMBURGER MENU*/
    .hamburger {
     display: none;
-    font-size: 24px;
+    font-size: 32px;
     user-select: none;
    }
    /* APPLYING MEDIA QUERIES */
@@ -323,7 +323,7 @@ input[type=checkbox]{
     font-size: 1rem;
     font-weight: 600;
     color: inherit;
-    line-height: 1rem;
+    line-height: 2rem;
   }
 
   .button {
