@@ -1,161 +1,76 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>Website</title>
-		<link rel="stylesheet" href="css/styles.css" />
-	</head>
-
-	<body>
-		<header>
-			<img src="img/logo.png" alt="Website logo" class="logo" />
-			<nav>
-				<ul>
-					<li><a href="https://K0sPr0.github.io">Home</a></li>
-					<li><a href="about">About</a></li>
-					<li><a href="contact">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
-
-		<section class="home-hero">
-			<div class="container">
-				<h1 class="title">
-					Programming group <span>of people who want to get hired</span>
-				</h1>
-
-				<a href="#portfolio" class="button button-accent">See our work</a>
-			</div>
-		</section>
-
-		<div class="container">
-			<section class="home-about">
-				<div class="home-about-textbox">
-					<h1>Who we are</h1>
-
-					<p>We are a group of friends who want to get hired as programmers</p>
-					<p>
-						<strong>Each of us has different skill sets.</strong> You can see
-						more of what each of us can do in the
-						<a href="contact">Contact</a> page
-					</p>
-				</div>
-			</section>
-		</div>
-
-		<section class="portfolio" id="portfolio">
-			<h1>Some of our work</h1>
-
-			<figure class="portfolio-item">
-				<img src="img/portfolio-01.jpg" alt="portfolio item" />
-				<figcaption class="portfolio-description">
-					<p>Fox</p>
-					<a href="" class="button button-accent button-small"
-						>Project details</a
-					>
-				</figcaption>
-			</figure>
-
-			<figure class="portfolio-item">
-				<img src="img/portfolio-02.jpg" alt="portfolio item" />
-				<figcaption class="portfolio-description">
-					<p>Sunflower</p>
-					<a href="" class="button button-accent button-small"
-						>Project details</a
-					>
-				</figcaption>
-			</figure>
-
-			<figure class="portfolio-item">
-				<img src="img/portfolio-03.jpg" alt="portfolio item" />
-				<figcaption class="portfolio-description">
-					<p>Whale</p>
-					<a href="" class="button button-accent button-small"
-						>Project details</a
-					>
-				</figcaption>
-			</figure>
-
-			<figure class="portfolio-item">
-				<img src="img/portfolio-04.jpg" alt="portfolio item" />
-				<figcaption class="portfolio-description">
-					<p>Beach</p>
-					<a href="" class="button button-accent button-small"
-						>Project details</a
-					>
-				</figcaption>
-			</figure>
-
-			<figure class="portfolio-item">
-				<img src="img/portfolio-05.jpg" alt="portfolio item" />
-				<figcaption class="portfolio-description">
-					<p>Owl</p>
-					<a href="" class="button button-accent button-small"
-						>Project details</a
-					>
-				</figcaption>
-			</figure>
-
-			<figure class="portfolio-item">
-				<img src="img/portfolio-06.jpg" alt="portfolio item" />
-				<figcaption class="portfolio-description">
-					<p>Bridge</p>
-					<a href="" class="button button-accent button-small"
-						>Project details</a
-					>
-				</figcaption>
-			</figure>
-		</section>
-
-		<section class="call-to-action">
-			<div class="container">
-				<h1 class="title title-call-to-action">
-					Like what you see? <span>Then what are you waiting for?</span>
-				</h1>
-
-				<a href="contact" class="button button-dark">Hire us</a>
-			</div>
-		</section>
-
-		<footer>
-			<div class="container">
-				<div class="col-3">
-					<p>
-						Shoreditch bespoke leggings, tote bag williamsburg woke retro
-						readymade scenester brunch art party farm-to-table pug. Wayfarers
-						lyft prism, edison bulb distillery pok pok narwhal pinterest poke.
-					</p>
-				</div>
-
-				<div class="col-1">
-					<ul class="unstyled-list">
-						<li><strong>Shoreditch</strong></li>
-						<li>Williamsburg</li>
-						<li>Woke retro</li>
-						<li>Readymade</li>
-						<li>Scenester</li>
-					</ul>
-				</div>
-				<div class="col-1">
-					<ul class="unstyled-list">
-						<li><strong>Shoreditch</strong></li>
-						<li>Williamsburg</li>
-						<li>Woke retro</li>
-						<li>Readymade</li>
-						<li>Scenester</li>
-					</ul>
-				</div>
-				<div class="col-1">
-					<ul class="unstyled-list">
-						<li><strong>Shoreditch</strong></li>
-						<li>Williamsburg</li>
-						<li>Woke retro</li>
-						<li>Readymade</li>
-						<li>Scenester</li>
-					</ul>
-				</div>
-			</div>
-		</footer>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>k0z</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <!-- LOGO -->
+            <a href="/" class="logo">k0z</a>
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links" role="list">
+            <!-- USING CHECKBOX HACK -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+                <li><a href="#"> <!-- YouTube icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" width="32px" viewBox="1 1 22 22" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round">
+                        <title>Youtube</title>
+                        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" fill="currentColor"></path>
+                        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="hsl(0, 0%, 8%)"></polygon>
+                    </svg>
+                </a></li>
+                <li><a href="#"> <!-- Instagram icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" width="32px" viewBox="1 1 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <title>Instagram</title>
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+                    </svg>
+                </a></li>
+                <li><a href="#"> <!-- TikTok icon -->
+                    <svg width="32px" height="32px" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="25 25 50 50">
+                        <title>TikTok</title>
+                        <path d="M50.8188 25.0422C53.5455 25 56.2566 25.025 58.9646 25C59.1286 28.1892 60.2756 31.4378 62.6101 33.6927C64.9399 36.0037 68.2354 37.0616 71.4418 37.4194V45.8089C68.4369 45.7105 65.418 45.0854 62.6913 43.7916C61.5038 43.2541 60.3974 42.5619 59.3146 41.854C59.3005 47.9418 59.3396 54.0219 59.2755 60.0847C59.113 62.9973 58.152 65.8959 56.4582 68.2961C53.733 72.2916 49.0031 74.8964 44.145 74.9777C41.1652 75.148 38.1884 74.3354 35.6493 72.8385C31.4412 70.3571 28.4801 65.8147 28.0488 60.9394C27.9988 59.8972 27.9817 58.8565 28.0238 57.8393C28.3989 53.875 30.3599 50.0826 33.4038 47.5028C36.854 44.4979 41.6871 43.0666 46.2123 43.9135C46.2545 46.9996 46.1311 50.0826 46.1311 53.1687C44.0638 52.4999 41.648 52.6874 39.8417 53.9422C38.5228 54.7969 37.5212 56.1063 36.9993 57.5877C36.5681 58.644 36.6915 59.8175 36.7165 60.9394C37.2118 64.3583 40.4995 67.2319 44.0091 66.921C46.3358 66.896 48.5656 65.5459 49.7781 63.5692C50.1703 62.877 50.6094 62.1692 50.6329 61.3551C50.8376 57.6283 50.7563 53.9172 50.7813 50.1904C50.7985 41.7915 50.7563 33.4161 50.8204 25.0438L50.8188 25.0422Z"></path>
+                    </svg>
+                </a></li>
+                <li><a href="#"> <!-- Contact icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" width="32px" viewBox="67 67 378 378" fill="currentColor">
+                        <title>Contact</title>
+                        <path d="M265.24,301.9548a14.0965,14.0965,0,0,1-9.24,3.5,13.7865,13.7865,0,0,1-9.17-3.5l-31.29-27.37L88.21,385.9548H423.86L296.53,274.585Z" id="id_109"></path>
+                        <polygon points="317.81 255.965 445 367.265 445 144.665 317.81 255.965" id="id_110"></polygon>
+                        <polygon points="67 144.665 67 367.335 194.26 255.965 67 144.665" id="id_111"></polygon>
+                        <polygon points="423.86 126.045 88.21 126.045 256 272.835 423.86 126.045" id="id_112"></polygon>
+                    </svg>
+                </a></li>
+            </div>
+            </ul>
+        </div>
+    </nav>
+    <div class="home">
+        <div class="gradient">
+            <div class="container home-text">
+                <h1>Beatboxer</h1>
+                <h3>& Looper</h3>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <section class="about">
+            <h2>About Me</h2>
+            <img src="images/about.jpg" alt="Picture of koz beatboxing">
+            <p>I have been beatboxing since the beginning of 2021, but music has been a part of my life for a long time.</p>
+            <button class="button btn-accent"><a href="contact.html">Read More</a></button>
+        </section>
+    </div>
+</body>
 </html>

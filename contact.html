@@ -1,29 +1,71 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<title>About</title>
-		<link rel="stylesheet" href="css/styles.css" />
-	</head>
-	<body>
-		<header>
-			<img src="img/logo.png" alt="Website logo" class="logo" />
-			<nav>
-				<ul>
-					<li><a href="https://K0sPr0.github.io">Home</a></li>
-					<li><a href="about">About</a></li>
-					<li><a href="contact">Contact</a></li>
-				</ul>
-			</nav>
-		</header>
-
-		<section class="home-hero">
-			<div class="container">
-				<h1 class="title about-title">
-					Contact <span>What each of us can do</span>
-				</h1>
-			</div>
-		</section>
-	</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>k0z</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <!-- LOGO -->
+            <a href="/" class="logo">k0z</a>
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links" role="list">
+            <!-- USING CHECKBOX HACK -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+                <li><a href="#"> <!-- YouTube icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" width="32px" viewBox="1 1 22 22" fill="none" stroke="currentColor" stroke-width="0" stroke-linecap="round" stroke-linejoin="round">
+                        <title>Youtube</title>
+                        <path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33z" fill="currentColor"></path>
+                        <polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02" fill="hsl(0, 0%, 8%)"></polygon>
+                    </svg>
+                </a></li>
+                <li><a href="#"> <!-- Instagram icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" width="32px" viewBox="1 1 22 22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <title>Instagram</title>
+                        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                        <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+                    </svg>
+                </a></li>
+                <li><a href="#"> <!-- TikTok icon -->
+                    <svg width="32px" height="32px" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="25 25 50 50">
+                        <title>TikTok</title>
+                        <path d="M50.8188 25.0422C53.5455 25 56.2566 25.025 58.9646 25C59.1286 28.1892 60.2756 31.4378 62.6101 33.6927C64.9399 36.0037 68.2354 37.0616 71.4418 37.4194V45.8089C68.4369 45.7105 65.418 45.0854 62.6913 43.7916C61.5038 43.2541 60.3974 42.5619 59.3146 41.854C59.3005 47.9418 59.3396 54.0219 59.2755 60.0847C59.113 62.9973 58.152 65.8959 56.4582 68.2961C53.733 72.2916 49.0031 74.8964 44.145 74.9777C41.1652 75.148 38.1884 74.3354 35.6493 72.8385C31.4412 70.3571 28.4801 65.8147 28.0488 60.9394C27.9988 59.8972 27.9817 58.8565 28.0238 57.8393C28.3989 53.875 30.3599 50.0826 33.4038 47.5028C36.854 44.4979 41.6871 43.0666 46.2123 43.9135C46.2545 46.9996 46.1311 50.0826 46.1311 53.1687C44.0638 52.4999 41.648 52.6874 39.8417 53.9422C38.5228 54.7969 37.5212 56.1063 36.9993 57.5877C36.5681 58.644 36.6915 59.8175 36.7165 60.9394C37.2118 64.3583 40.4995 67.2319 44.0091 66.921C46.3358 66.896 48.5656 65.5459 49.7781 63.5692C50.1703 62.877 50.6094 62.1692 50.6329 61.3551C50.8376 57.6283 50.7563 53.9172 50.7813 50.1904C50.7985 41.7915 50.7563 33.4161 50.8204 25.0438L50.8188 25.0422Z"></path>
+                    </svg>
+                </a></li>
+                <li><a href="#"> <!-- Contact icon -->
+                    <svg xmlns="http://www.w3.org/2000/svg" height="32px" width="32px" viewBox="67 67 378 378" fill="currentColor">
+                        <title>Contact</title>
+                        <path d="M265.24,301.9548a14.0965,14.0965,0,0,1-9.24,3.5,13.7865,13.7865,0,0,1-9.17-3.5l-31.29-27.37L88.21,385.9548H423.86L296.53,274.585Z" id="id_109"></path>
+                        <polygon points="317.81 255.965 445 367.265 445 144.665 317.81 255.965" id="id_110"></polygon>
+                        <polygon points="67 144.665 67 367.335 194.26 255.965 67 144.665" id="id_111"></polygon>
+                        <polygon points="423.86 126.045 88.21 126.045 256 272.835 423.86 126.045" id="id_112"></polygon>
+                    </svg>
+                </a></li>
+            </div>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <section class="about">
+            <h2>About Me</h2>
+            <img src="images/about.jpg" alt="Picture of koz beatboxing">
+            <p>When I was 8 years old my parents bought me a keyboard. None of them were really musical, but they thought it would be a good idea for me to do something in my free time. I decided that playing piano was too difficult and ended up playing video games. As the years went by I started to become more and more interested in music. When I started watching YouTube at 10 years old, my recommended page was filled with music content. I was always watching people like Marcus Veltri in my free time, and I finally decided to get back to learning piano. I quickly realised that playing wasn't enough to make me good at music. This demotivated me and ended up with me not playing for a couple years. When I was 13 years old we had to learn to play guitar in music class at school. Our teacher was amazing, and I immidietaly felt the joy of making music again. I started studying music theory on my own and got better and better at both piano and guitar. I was playing more then I had ever played before, but this only ended up with me being burnt out again.</p>
+            <p>My YouTube recommended page has always had beatboxing on it. In the beginning of 2021, I decided that I wanted to do what I had been seeing in all the videos. I searched up some tutorials and started practicing. It took me 3 months to be able to produce any basic sound somewhat correctly, but after that it felt like something clicked. I started learning at a lightning pace, doing a new sound several times a week. Since august the previous year I have been going to singing lessons, and towards christmas when my teacher asked me what I wanted to do for the christmas performance our school was organizing I revealed to her that I have been learning beatboxing for half a year. She was so impressed that we started writing a beatbox cover of “Jingle Bells”, that I was supposed to perform. Unfortunately, the event got canceled because of a local Covid outbreak.</p>
+            <p>In February 2022, I signed up for the qualifying round of the norwegian “UKM” competition/event. UKM is an event where teens under 20 can show off any performance art they are working on. You start off by competing in a small local competition, where you then can progress onwards to a slightly bigger regional competition, after which you finally can show off your skills in the final national competition with 500 of the best teen artists in Norway. When I entered my hopes weren't high. I thought that I could maybe pull of going past the qualifyer, but didn't see myself going much further with a skill that I had been working a year on. This was also my first ever performance on a stage, which was terrifying. I was very stressed before going on stage. When I walked on and grabbed the mic, I was in a different place. I was so in the zone that I barely remember being on the stage. The whole 3 minute performance felt like about 2 seconds. What I do remember though, is the crowd response. My singing teacher told me that in all of her years working, she had never seen such amazement. This was when I realised that I might have a chance at getting a bit further in the competition than I originally thought. I quickly got the message that I was advancing to the next competition.</p>
+            <p>In April, it was finally time to perform in the regional competition. I wasn't as stressed about this performance after knowing that people actually enjoy what I do. When time came for my sound check though, I quickly got a little more stressed. The sound engineer at this venue was really hard to work with. Before I started my performance I tried to give him a quick run-down of how beatboxing is usually mixed, but he interrupted me saying: “just start...”. This honestly made me pretty annoyed but I trusted that he knew what he was doing since he didn't want to listen to me. When I started beatboxing I quickly realised that he did not in fact know what he was doing, as his mixing ended up being pretty much the opposite of what I said. First of all, for beatboxing you usually want to boost the lows so all the bassy techniques come out better through the microphone. He ended up slightly dropping the lows, which ended up with some of my sounds almost being completely gone. Second of all, you want to drop the mids a bit for beatboxing to balance out the volumes of basses to normal speaking voice. He boosted the mids so my speaking voice became much louder than everything else. In my head this meant that my performance would be much worse, and might lead to me not progressing to the next and alst competition. What ended up happening was that nobody even noticed anything because they didn’t have the experience of listening to a good beatbox mix before, so it ended up being completely fine and the crowd response was as good, if not better, than the first performance. I got a phone call from someone on the team not long after the competition saying that all of the judges ranked me first in the competition, meaning that I was now going to perform at the national event.</p>
+            <p>The last performance in the event does not get ranked, as the point of the competition is primarily to make teens meet each other. The bus our region had to take to the competition was running extremely late, leading to me almsot missing my sound check. The whole event is 5 days, and my performance was in the opening-show. I was barely in time to get my sound-check done, but there was something special about this stage. The moment I started beatboxing, I knew that this was going to be my best performance. The sound quality was absolutely elite, and I wouldn't expect less from such a big event. After my sound check i only had about 45 minutes to rest before I had to go on stage. The performance was as I expected... absolutely amazing. So amazing in fact, that I got a standing ovation from the crowd. Throughout the rest of the competition only 2 other performances got standing ovations as well.</p>
+        </section>
+    </div>
+</body>
 </html>
