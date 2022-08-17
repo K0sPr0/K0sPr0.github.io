@@ -297,3 +297,37 @@ input[type=checkbox]{
 .about > button > a {
   margin: auto;
 }
+
+@media (max-width: 810px) {
+  h1 { 
+    font-size: 3.75rem;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+  }
+  
+  h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  
+  p,
+  a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: inherit;
+    line-height: 1rem;
+  }
+
+  .button {
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    border: none;
+  }
+}
