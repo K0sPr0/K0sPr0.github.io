@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "eslint": "^8.22.0",
+    "light-server": "^2.9.1"
+  },
+  "scripts": {
+    "build": "npm run build:css",
+    "build:css": "copy src\\style.css build && copy src\\contact.css build",
+    "lint": "eslint src",
+    "dev": "light-server -s . -p 9090 -w \"src\\style.css # npm run build:css # reloadcss\" -w \"src\\contact.css # npm run build:css # reloadcss\""
+  }
+}
