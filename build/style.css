@@ -186,7 +186,7 @@ svg {
     gap: 1em;
     font-size: 1.25rem;
    }
-   .menu li:hover a {
+   .menu li:hover a > *{
     color: var(--clr-primary-hover);
     transition: 0.3s ease;
    }
