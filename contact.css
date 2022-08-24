@@ -1,0 +1,336 @@
+:root {
+    --clr-100: hsl(0, 0%, 90%);
+    --clr-200: hsl(0, 0%, 80%);
+    --clr-600: hsl(180, 63%, 31%);
+    --clr-700: hsl(180, 63%, 21%);
+    --clr-800: hsl(0, 0%, 18%);
+    --clr-900: hsl(0, 0%, 8%);
+
+    --clr-primary: var(--clr-100);
+    --clr-primary-hover: var(--clr-200);
+    --clr-secondary: var(--clr-900);
+    --clr-secondary-hover: var(--clr-800);
+    --clr-accent: var(--clr-600);
+    --clr-accent-hover: var(--clr-700);
+
+    --clr-body: var(--clr-primary);
+}
+
+/* https://piccalil.li/blog/a-modern-css-reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+  font-family: 'Inter', sans-serif;
+}
+
+h1 { 
+  font-size: 8rem;
+  font-weight: 600;
+  line-height: 8rem;
+}
+
+h2 {
+  font-size: 6rem;
+  font-weight: 600;
+  line-height: 6rem;
+}
+
+h3 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 4rem;
+}
+
+p,
+a {
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 3rem;
+  color: inherit;
+}
+
+.button {
+  width: fit-content;
+  height: fit-content;
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  border: none;
+}
+.btn-accent {
+  background-color: var(--clr-secondary);
+  color: var(--clr-primary);
+}
+.btn-accent:hover {
+  background-color: var(--clr-secondary-hover);
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+html,
+body {
+  height: 100vh;
+}
+
+/* Set core body defaults */
+body {
+  background-color: var(--clr-body);
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a {
+  text-decoration: none;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* Utility classes */
+.text-color-100 {
+    color: var(--clr-100);
+}
+.text-color-600 {
+    color: var(--clr-600);
+}
+.text-color-900 {
+    color: var(--clr-900);
+}
+
+.bg-color-100 {
+    background-color: var(--clr-100);
+}
+.bg-color-600 {
+    background-color: var(--clr-600);
+}
+.bg-color-900 {
+    background-color: var(--clr-900);
+}
+
+.container {
+    max-width: min(88rem, 95vw);
+    margin: 0 auto;
+}
+
+.center {
+    margin: auto;
+}
+
+
+/* NAVBAR STYLING STARTS */
+.navbar {
+    padding: 0.75rem 0;
+    background-color: var(--clr-secondary);
+    color: var(--clr-primary);
+   }
+   .navbar > .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   }
+   .nav-links a {
+    color: var(--clr-primary);
+   }
+   /* LOGO */
+   .logo {
+    font-size: 2rem;
+    color: var(--clr-primary);
+   }
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 1.25rem;
+   }
+   .menu li:hover a {
+    color: var(--clr-primary-hover);
+    transition: 0.3s ease;
+   }
+   .menu li {
+    padding: .5rem 0 .5rem 1rem;
+   }
+   /* DROPDOWN MENU */
+   .ddli {
+    position: relative; 
+   }
+   .dropdown {
+    background-color: var(--clr-secondary);
+    padding: 1em 0;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+   }
+   .dropdown li + li {
+    margin-top: 10px;
+   }
+   .dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+   }
+   .dropdown li:hover a {
+    color: var(--clr-primary-hover);
+   }
+   .services:hover .dropdown {
+    display: block;
+   }
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox]{
+    display: none;
+   } 
+   /*HAMBURGER MENU*/
+   .hamburger {
+    display: none;
+    font-size: 32px;
+    user-select: none;
+   }
+   /* APPLYING MEDIA QUERIES */
+   @media (max-width: 810px) {
+    .container {
+      margin: 0 0.5rem;
+    }
+
+    .menu { 
+        z-index: 100;
+        display:none;
+        position: absolute;
+        background-color: var(--clr-secondary);
+        right: 0;
+        left: 0;
+        padding: 16px 0;
+    }
+    .menu li {
+      padding: 0.5rem 1rem;
+    }
+    .menu li a svg{
+      margin: 0 auto;
+    }
+    .menu li:hover a {
+        transition: 0.3s ease;
+    }
+    .menu li + li {
+        margin-top: 12px;
+    }
+    input[type=checkbox]:checked ~ .menu{
+        display: block;
+    }
+    .hamburger {
+        display: block;
+    }
+    .dropdown {
+        left: 50%;
+        top: 30px;
+        transform: translateX(35%);
+    }
+    .dropdown li:hover a {
+        color: var(--clr-secondary-hover);
+    }
+   }
+
+/* About Me */
+.about {
+  padding: 5rem 0;
+}
+
+.about > * {
+  margin-bottom: 1rem;
+}
+
+.about > h2 {
+  text-align: center;
+  margin-bottom: 5rem;
+}
+.about > img {
+  float: left;
+  width: 44rem;
+  border-radius: 4rem;
+  margin-right: 1rem;
+  box-shadow: 0px 0px 16px 0px rgba(0,0,0,1);
+  -webkit-box-shadow: 0px 0px 16px 0px rgba(0,0,0,1);
+  -moz-box-shadow: 0px 0px 16px 0px rgba(0,0,0,1);
+}
+.about > button {
+  grid-area: button;
+  margin: 0 auto;
+}
+.about > button > a {
+  margin: auto;
+}
+
+@media (max-width: 810px) {
+  h1 { 
+    font-size: 3.75rem;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+  }
+  
+  h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  
+  p,
+  a {
+    font-size: 1rem;
+    font-weight: 600;
+    color: inherit;
+    line-height: 2rem;
+  }
+
+  .button {
+    width: fit-content;
+    height: fit-content;
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+    border: none;
+  }
+}
