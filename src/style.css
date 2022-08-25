@@ -91,6 +91,8 @@ html:focus-within {
 html,
 body {
   height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* Set core body defaults */
@@ -127,6 +129,12 @@ svg {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+@media only screen and (max-device-width: 480px) {
+	body {
+		-webkit-text-size-adjust: 100%;
+		-ms-text-size-adjust: 100%;
+	}
 }
 
 
@@ -298,7 +306,7 @@ input[type=checkbox]{
 
 @media (max-width: 926px) {
   .container {
-    max-width: min(88rem, 95vw);
+    max-width: min(88rem, 92vw);
     margin: 0 auto;
   }
 
@@ -343,7 +351,7 @@ input[type=checkbox]{
   }
  }
 
-@media (max-width: 810px) {
+@media (max-width: 850px) {
   h1 { 
     font-size: 3.75rem;
     font-weight: 600;
