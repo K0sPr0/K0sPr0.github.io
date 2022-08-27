@@ -160,7 +160,7 @@ svg {
 }
 
 .container {
-    max-width: min(88rem, 95vw);
+    max-width: min(88rem, 92vw);
     margin: 0 auto;
 }
 
@@ -305,12 +305,26 @@ input[type=checkbox]{
   margin: auto;
 }
 
-@media (max-width: 926px) {
-  .container {
-    max-width: min(88rem, 92vw);
-    margin: 0 auto;
-  }
+.contact {
+  padding: 2rem 0;
+  display: block;
+}
+.contact > * {
+  margin-bottom: 1rem !important;
+}
+.contact > h2 {
+  margin-bottom: 2rem !important;
+}
+.contact > p {
+  text-align: start;
+}
+.contact > img {
+  width: 50%;
+  margin-right: 1rem; 
+  margin-bottom: 0 !important;
+}
 
+@media (max-width: 1080px) {
   .menu { 
       z-index: 100;
       display:none;
@@ -346,20 +360,14 @@ input[type=checkbox]{
   .dropdown li:hover a {
       color: var(--clr-secondary-hover);
   }
-  
   .gradient {
     height: calc(100vh - 60px);
-  }
-
-  .about {
-    padding: 2rem 0;
-    display: block;
   }
  }
 
 @media (max-width: 850px) {
   h1 { 
-    font-size: 3.75rem;
+    font-size: 5rem;
     font-weight: 600;
     line-height: normal;
   }
@@ -376,7 +384,7 @@ input[type=checkbox]{
   
   p,
   a {
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: 600;
     color: inherit;
     line-height: 2rem;
@@ -392,27 +400,58 @@ input[type=checkbox]{
 
   .home-text {
     text-align: center;
-    margin-top: 5vh;
   }
 
-  .about > * {
-    margin-bottom: 2rem !important;
-  }
-
-  .about > img {
-    max-width: 50%;
-  } 
-
-  .about > button {
-    text-align: center;
-    display: flex;
-    align-content: center;
+  .about {
+    row-gap: 2rem;
   }
 }
 
-@media (max-width: 400px) {
-  .about > img {
+@media (max-width: 650px) {
+  .about {
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(100px, auto);
+    grid-template-areas: 
+    "title"
+    "image"
+    "txt"
+    "button"
+    ;
+  }
+
+  .contact > img {
+    margin-bottom: 1rem !important;
     float: none;
     max-width: 100%;
+    width: 100%;
+  }
+  .contact > p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 450px) {
+  h1 { 
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: normal;
+  }
+  
+  h2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+  }
+  
+  h3 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+
+  p,
+  a {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: inherit;
+    line-height: 2rem;
   }
 }
