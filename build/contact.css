@@ -229,9 +229,10 @@ input[type=checkbox]{
     user-select: none;
    }
    /* APPLYING MEDIA QUERIES */
-   @media (max-width: 810px) {
+   @media (max-width: 850px) {
     .container {
-      margin: 0 0.5rem;
+      max-width: min(88rem, 92vw);
+      margin: 0 auto;
     }
 
     .menu { 
@@ -301,7 +302,7 @@ input[type=checkbox]{
   margin: auto;
 }
 
-@media (max-width: 810px) {
+@media (max-width: 850px) {
   h1 { 
     font-size: 3.75rem;
     font-weight: 600;
@@ -332,5 +333,16 @@ input[type=checkbox]{
     padding: 0.5rem 1rem;
     border-radius: 2rem;
     border: none;
+  }
+
+  .about > img {
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  .about > img {
+    float: none;
+    max-width: 100%;
   }
 }
