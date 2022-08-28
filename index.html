@@ -77,5 +77,20 @@
             <button class="button btn-accent"><a href="contact">Read More</a></button>
         </section>
     </div>
+    <div id="instafeed-container"></div>
+
+
+
+	<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
+	<script type="text/javascript">
+	var userFeed = new Instafeed({
+        debug: true,
+        limit: 3,
+        template: '<a href="{{link}}"><img class="{{model.media_type}}" title="{{caption}}" src="{{image}}" /></a>',
+		target: "instafeed-container",
+		accessToken: 'IGQVJYdjM5NzdVWXMwMTh4bmEwWllvSGJsRV8xOVNTT1NHdjJrRGQ4S05uQWZAwN2dQVmtRZA2tCdXVwc2FOazNLRFBrYmE5MThDMlJibEMwa1NwaXNhanJSaTR5QVRsb0R5NVFZAQU1ZAdXl5d0UyVmx4TwZDZD'
+	});
+	userFeed.run();
+	</script>
 </body>
 </html>
