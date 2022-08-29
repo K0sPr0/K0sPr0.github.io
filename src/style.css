@@ -324,6 +324,50 @@ input[type=checkbox]{
   margin-bottom: 0 !important;
 }
 
+#instafeed-container > div {
+  width: fit-content;
+}
+
+.CAROUSEL_ALBUM {
+  position: relative;
+}
+.CAROUSEL_ALBUM > a::before {
+  font-size: 10rem;
+  color: var(--clr-secondary);
+  content: "\276E";
+  position: absolute;
+  top: 50%;
+  left: 1rem;
+}
+.CAROUSEL_ALBUM > a::after {
+  font-size: 10rem;
+  color: var(--clr-secondary);
+  content: "\276F";
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+}
+
+.VIDEO{
+  position: relative;
+}
+.VIDEO > a::before {
+  font-size: 10rem;
+  color: var(--clr-secondary);
+  content: "\25BA";
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 4rem);
+}
+.VIDEO > a::after {
+  font-size: 13rem;
+  color: var(--clr-secondary);
+  content: "\25EF";
+  position: absolute;
+  top: 50%;
+  left: calc(50% - 7rem);
+}
+
 @media (max-width: 1080px) {
   .menu { 
       z-index: 100;
@@ -427,6 +471,11 @@ input[type=checkbox]{
   }
   .contact > p {
     text-align: center;
+  }
+
+  .CAROUSEL_ALBUM > a::before,
+  .CAROUSEL_ALBUM > a::after {
+    font-size: 5rem;
   }
 }
 
