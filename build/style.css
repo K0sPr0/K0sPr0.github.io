@@ -324,8 +324,33 @@ input[type=checkbox]{
   margin-bottom: 0 !important;
 }
 
+.instagram-feed {
+  text-align: center;
+  background-color: var(--clr-secondary);
+  box-shadow: 0 0 0 100vmax var(--clr-secondary);
+  clip-path: inset(0 -100vmax);
+  color: var(--clr-primary);
+  padding: 1rem;
+}
+
+.instagram-feed > h3 {
+  margin-bottom: 2rem;
+}
+
+#instafeed-container {
+  display: flex;
+  width: 100%;
+  gap: 1rem;
+}
+
 #instafeed-container > div {
-  width: fit-content;
+  width: 100%;
+}
+
+.insta-img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
 }
 
 .CAROUSEL_ALBUM {
@@ -336,14 +361,16 @@ input[type=checkbox]{
   color: var(--clr-secondary);
   content: "\276E";
   position: absolute;
+  line-height: 0;
   top: 50%;
   left: 1rem;
 }
 .CAROUSEL_ALBUM > a::after {
+  content: "\276F";
   font-size: 10rem;
   color: var(--clr-secondary);
-  content: "\276F";
   position: absolute;
+  line-height: 0;
   top: 50%;
   right: 1rem;
 }
@@ -352,20 +379,24 @@ input[type=checkbox]{
   position: relative;
 }
 .VIDEO > a::before {
+  content: "\25BA";
+  text-align: center;
   font-size: 10rem;
   color: var(--clr-secondary);
-  content: "\25BA";
   position: absolute;
+  line-height: 0;
   top: 50%;
-  left: calc(50% - 4rem);
+  width: 100%;
 }
 .VIDEO > a::after {
   font-size: 13rem;
+  text-align: center;
   color: var(--clr-secondary);
   content: "\25EF";
   position: absolute;
+  line-height: 0;
   top: 50%;
-  left: calc(50% - 7rem);
+  width: 100%;
 }
 
 @media (max-width: 1080px) {
@@ -419,11 +450,13 @@ input[type=checkbox]{
   h2 {
     font-size: 3.5rem;
     font-weight: 600;
+    line-height: normal;
   }
   
   h3 {
     font-size: 2.5rem;
     font-weight: 600;
+    line-height: normal;
   }
   
   p,
@@ -448,6 +481,7 @@ input[type=checkbox]{
 
   .about {
     row-gap: 2rem;
+    padding: 2rem 0;
   }
 }
 
@@ -473,9 +507,17 @@ input[type=checkbox]{
     text-align: center;
   }
 
+  #instafeed-container {
+    flex-direction: column;
+  }
+
   .CAROUSEL_ALBUM > a::before,
-  .CAROUSEL_ALBUM > a::after {
+  .CAROUSEL_ALBUM > a::after,
+  .VIDEO > a::before {
     font-size: 5rem;
+  }
+  .VIDEO > a::after {
+    font-size: 6.5rem;
   }
 }
 

@@ -61,14 +61,14 @@
             </ul>
         </div>
     </nav>
-    <div class="home">
+    <section class="home">
         <div class="gradient">
             <div class="container home-text">
                 <h1>Beatboxer</h1>
                 <h3>& Looper</h3>
             </div>
         </div>
-    </div>
+    </section>
     <div class="container">
         <section class="about">
             <h2>About Me</h2>
@@ -76,17 +76,24 @@
             <p>I have been beatboxing since the beginning of 2021, but music has been a part of my life for a long time.</p>
             <button class="button btn-accent"><a href="contact">Read More</a></button>
         </section>
+        <section class="instagram-feed">
+            <h2>Instagram</h2>
+            <h3>Most Recent</h3>
+            <div id="instafeed-container"></div>
+        </section>
+        
     </div>
-    <div id="instafeed-container"></div>
-
+    <div class="container">
+        
+    </div>
 
 
 	<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
 	<script type="text/javascript">
 	var userFeed = new Instafeed({
         debug: true,
-        limit: 7,
-        template: '<div class="{{model.media_type}}"><a href="{{link}}" target="_blank"><img title="{{caption}}" src="{{image}}" /></a></div>',
+        limit: 3,
+        template: '<div class="{{model.media_type}}"><a href="{{link}}" target="_blank"><img class="insta-img" title="{{caption}}" src="{{image}}" /></a></div>',
 		target: "instafeed-container",
 		accessToken: 'IGQVJYdjM5NzdVWXMwMTh4bmEwWllvSGJsRV8xOVNTT1NHdjJrRGQ4S05uQWZAwN2dQVmtRZA2tCdXVwc2FOazNLRFBrYmE5MThDMlJibEMwa1NwaXNhanJSaTR5QVRsb0R5NVFZAQU1ZAdXl5d0UyVmx4TwZDZD'
 	});
