@@ -89,15 +89,8 @@
 
 
 	<script src="https://cdn.jsdelivr.net/gh/stevenschobert/instafeed.js@2.0.0rc1/src/instafeed.min.js"></script>
-	<script type="text/javascript">
-	var userFeed = new Instafeed({
-        debug: true,
-        limit: 3,
-        template: '<div class="{{model.media_type}}"><a href="{{link}}" target="_blank"><img class="insta-img" title="{{caption}}" src="{{image}}" /></a></div>',
-		target: "instafeed-container",
-		accessToken: 'test'
-	});
-	userFeed.run();
+	<script src="src/instagram.js">
+	
 	</script>
 </body>
 </html>
